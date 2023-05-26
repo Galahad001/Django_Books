@@ -1,9 +1,18 @@
-<main>
-    <div class="card">
-        <h3>{{ book.title }}</h3><br>
-        <div class="text_post">
-            <p>{{ book.content }}</p>
-        </div><br>
-        <p>{{ book.author }}</p><br>
-    </div>
-</main>
+{% extends 'book/layout.html' %}
+
+{% block title %}Подробнее о Книге{% endblock %}
+
+
+{% block content %}
+    <div class="photo">Test</div>
+    <main class="book">
+        <div class="text">
+            <h3 class="name">{{ book.title }}</h3><br>
+            <div class="text_book">
+                <p>{{ book.content }}</p>
+            </div><br>
+            <p>{{ book.author }}</p><br>
+        </div>
+    </main>
+    <p class="back"><a href="{% url 'home' %}">На главную</a></p>
+{% endblock %}

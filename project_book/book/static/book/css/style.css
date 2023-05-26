@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.home_book_block{
+    width: 70%;
+    height: 100vh;
+    float: right;
+    margin: 30px 30px 0px 30px;
+    color: rgb(255, 255, 255);
+}
+
+
+.text_home{
+    text-align: justify;
+    font-family: Arial, sans-serif;
+}
+
+
+
+body{
+    background-color: rgb(41, 39, 39);
+}
+
+.book{
+    width: 90%;
+    height: 85vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.text{
+    position: absolute;
+    bottom: 60px;
+    color: rgb(255, 255, 255);
+    margin-right: 57px;
+}
+
+.name{
+    text-align: center;
+    font-size: 30px;
+}
+
+.text_book{
+    text-align: justify;
+}
+
+.back{
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(12, 101, 179);
+    font-size: 20px;
+}
+
+.photo_home{
+    width: 20%;
+    height: 100vh;
+    float: left;
+    padding: 30px 30px 30px 30px;
+    position: absolute;
+}
+
+.photo{
+    width: 90%;
+    height: 170px;
+    margin: 5px 40px 5px 40px;
+    position: absolute;
+}
