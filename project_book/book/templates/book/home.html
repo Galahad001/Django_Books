@@ -4,7 +4,11 @@
 
 
 {% block content %}
-    <div class="photo_home"><p>Test</p></div>
+    <ul class="photo_home">
+        <li><img class="img_1" src="{{ 'static/book/css/img/img_gt.jpg' }}" alt="1" width='150px' height="200px"></li>
+        <li><img class="img_2" src="{{ 'static/book/css/img/img_lr.jpg' }}" alt="2" width='150px' height="200px"></li>
+        <li><img class="img_3" src="{{ 'static/book/css/img/img_gp.jpg' }}" alt="3" width='150px' height="200px"></li>
+    </ul>
     <div class="home_book_block">
         {% for b in book %}
             <h2>{{ b.title }}</h2>

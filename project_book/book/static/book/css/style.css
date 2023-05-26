@@ -65,6 +65,7 @@ a{
     float: left;
     padding: 30px 30px 30px 30px;
     position: absolute;
+    list-style-type: none;
 }
 
 .photo{
@@ -72,4 +73,9 @@ a{
     height: 170px;
     margin: 5px 40px 5px 40px;
     position: absolute;
+    text-align: center;
+}
+
+.img_4{
+    text-align: center;
 }
