@@ -4,19 +4,22 @@
 
 
 {% block content %}
-    <ul class="photo_home">
-        <li><img class="img_1" src="{{ 'static/book/css/img/img_gt.jpg' }}" alt="1" width='150px' height="200px"></li>
-        <li><img class="img_2" src="{{ 'static/book/css/img/img_lr.jpg' }}" alt="2" width='150px' height="200px"></li>
-        <li><img class="img_3" src="{{ 'static/book/css/img/img_gp.jpg' }}" alt="3" width='150px' height="200px"></li>
-    </ul>
     <div class="home_book_block">
         {% for b in book %}
-            <h2>{{ b.title }}</h2>
-            <p class="text_home">{{ b.description }}</p>
-            <p>{{ b.author }}</p>
-            <a href="{% url 'book' b.id %}">Читать далее</a>
-            <br><br>
+            <div class="books_home">
+                <div class="img">
+                    <!-- <li><img class="img_1" src="{{ 'static/book/css/img/img_gt.jpg' }}" alt="1" width='150px' height="200px"></li>
+                    <li><img class="img_2" src="{{ 'static/book/css/img/img_lr.jpg' }}" alt="2" width='150px' height="200px"></li> -->
+                    <p><img src="{{ b.img }}" alt="3" width='150px' height="200px"></p>
+                </div>
+                <div class="text">
+                    <h2 class="text_home">{{ b.title }}</h2>
+                    <p class="text_home">{{ b.description }}</p>
+                    <p class="text_home">{{ b.author }}</p>
+                    <a class="text_home" href="{% url 'book' b.id %}">Читать далее</a>
+                </div>
+            </div>
+            <br>
         {% endfor %}
-
     </div>
 {% endblock %}

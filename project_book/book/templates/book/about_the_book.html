@@ -4,17 +4,13 @@
 
 
 {% block content %}
-    <div class="photo">
-        <img src="{{ '../../static/book/css/img/img_gp.jpg' }}" alt="4" width='200px' height="250px">
-    </div>
-    <main class="book">
-        <div class="text">
+    <div class="text_book">
+        <p class="img_book"><img src="{{ book.img }}" alt="4" width='400px' height="550px"></p>
             <h3 class="name">{{ book.title }}</h3><br>
             <div class="text_book">
-                <p>{{ book.content }}</p>
-            </div><br>
-            <p>{{ book.author }}</p><br>
-        </div>
-    </main>
-    <p class="back"><a href="{% url 'home' %}">На главную</a></p>
+                <p>{{ book.content }}</p><br>
+                <p>{{ book.author }}</p><br>
+                <p class="back"><a href="{% url 'home' %}">На главную</a></p>
+            </div>
+    </div>
 {% endblock %}

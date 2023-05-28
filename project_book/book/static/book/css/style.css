@@ -3,7 +3,64 @@
     padding: 0;
 }
 
-.home_book_block{
+body{
+    background-color: rgb(41, 39, 39);
+}
+
+/* Стили шаблона home.html */
+
+.home_book_block {
+    width: 95%;
+    height: 100vh;
+    margin: 30px 30px 0px 30px;
+    color: rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img{
+    width: 200px;
+}
+
+.text{
+    width: 70%;
+    float: right;
+    margin-top: -200px;
+}
+
+.text_home{
+    text-align: justify;
+    font-family: Arial, sans-serif;
+}
+
+/* Стили шаблона  about_the_book.html*/
+.text_book{
+    width: 90%;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    color: wheat;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.img_book{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.name{
+    text-align: center;
+    font-size: 57px;
+}
+
+
+
+
+
+
+
+/* .home_book_block{
     width: 70%;
     height: 100vh;
     float: right;
@@ -78,4 +135,4 @@ a{
 
 .img_4{
     text-align: center;
-}
+} */

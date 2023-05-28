@@ -6,6 +6,7 @@ class Book(models.Model):
     content = models.TextField(verbose_name='Текст книги')
     description = models.TextField(verbose_name='Краткое описание')
     author = models.CharField(max_length=50, verbose_name='Автор')
+    img = models.CharField(max_length=200, null=True, verbose_name='Адрес фото')
 
     def __str__(self):
         return self.title
